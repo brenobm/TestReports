@@ -7,4 +7,37 @@
   <rd:ReportTemplate>true</rd:ReportTemplate>
   <Page>
   </Page>
+  <DataSources>
+    <DataSource Name="Test1_DataSource">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>283866e0-7015-4651-9975-92db9466688d</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Test1_DataSet">
+      <Query>
+        <DataSourceName>Test1_DataSource</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Test1_DataSetName</rd:DataSetName>
+        <rd:TableName>Test1</rd:TableName>
+        <rd:ObjectDataSourceSelectMethod>ListarTeste</rd:ObjectDataSourceSelectMethod>
+        <rd:ObjectDataSourceType>TestReports.Models.Test, TestReport</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
 </Report>

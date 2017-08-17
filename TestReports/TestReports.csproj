@@ -252,6 +252,7 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="RelatorioExemplo.rdlc" />
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="TestReport.rdlc">
       <SubType>Designer</SubType>
